@@ -40,12 +40,14 @@
 			return this.each(function(index, elment){
 				
 				if ( $(this).children('div, li').length > 0 ) { //must be a div or li
+					var	parentElmWrapper = $(this).parent().parent();
+					var	parentElm = $(this);
 					var	elm = $(this).children('div,li');
 					
 					function oddEvenFirstLast() {	//odd even first and last
-						$(elm, this).each(function() { 
-							$('div:odd,li:odd').addClass('odd');
-							$('div:even,li:even').addClass('even');
+						$(parentElm).each(function() { 
+							$(this).find('div:odd,li:odd').addClass('odd');
+							$(this).find('div:even,li:even').addClass('even');
 						});
 					}
 						
@@ -55,11 +57,13 @@
 					
 					$(elm).each(function() {
 						$(this).hover(function(){ //hover/mouseOver
+						  parentElmWrapper.addClass('activeHovering'); //add parent class
 							$(elm).not(this).addClass('active');
 							var elmHover = $(this);
 							$(elmHover).addClass('hovered');
 						},
 						function(){ //mouseOut
+						  parentElmWrapper.removeClass('activeHovering'); //remove parent class
 							$(elm).removeClass('active');
 							$(this).removeClass('hovered');
 						});
