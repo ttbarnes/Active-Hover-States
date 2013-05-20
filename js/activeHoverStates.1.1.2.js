@@ -33,10 +33,9 @@
 				selectors: {
 					target: '.activeHoverStates'
 				},
-				oddEvenFirstLast: true, //oddEven, first and last classes
+				oddEven: true, //oddEven, first and last classes
 				parentBgColourChange: true //parent BG colour change
 			}, options);
-			
 			
 			return this.each(function(index, elment){
 				
@@ -45,15 +44,15 @@
 					var	parentElm = $(this);
 					var	elm = $(this).children('div,li');
 					
-					function oddEvenFirstLast() {	//odd even first and last
+					function oddEven() {	//odd even
 						$(parentElm).each(function() { 
 							$(this).find('div:odd,li:odd').addClass('odd');
 							$(this).find('div:even,li:even').addClass('even');
 						});
 					}
-						
-					if (defaultSettings.oddEvenFirstLast == true){ //odd even first and last
-					  oddEvenFirstLast();
+					
+					if (defaultSettings.oddEven == true){ //odd even
+					  oddEven();
 					}
 					
 					if (defaultSettings.parentBgColourChange == true){ //parent BG colour change
