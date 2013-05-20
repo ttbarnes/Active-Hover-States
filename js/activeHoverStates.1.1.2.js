@@ -1,12 +1,12 @@
 /*
-	* Acive Hover States 1.1.1
+	* Acive Hover States 1.1.2
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
 	* Author: Tony Barnes
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 09/05/2013
+	* Last updated: 20/05/2013
 	* Requirments: 
 	* 1: jQuery
 	*
@@ -17,15 +17,15 @@
 		init : function(options) {
 		
 			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { //viewport meta tag manipulation - alter the viewport meta tag for better portait/landscape rendering (iphone,ipad detection)
-				var $viewport = $('head').children('meta[name="viewport"]'); //cache the viewport tag if the user is using an iPhone
-				$(window).bind('orientationchange', function() { //bind an event handler to the window object for the orientationchange event
+				var $viewport = $('head').children('meta[name="viewport"]'); 
+				$(window).bind('orientationchange', function() { 
 					if (window.orientation == 90 || window.orientation == -90 || window.orientation == 270) {
-						$viewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0'); //landscape
+						$viewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
 					} 
 					else {
-						$viewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0'); //portrait
+						$viewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
 					}
-				}).trigger('orientationchange'); //trigger an orientationchange event on the window object to initialize this code (basically in-case the user opens the page in landscape mode)
+				}).trigger('orientationchange');
 			}
 
 		  //default settings
