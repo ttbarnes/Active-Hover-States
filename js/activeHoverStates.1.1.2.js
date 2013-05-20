@@ -7,7 +7,7 @@
 	* No license or copyright - do what you like
 	*
 	* Last updated: 20/05/2013
-	* Requirments: 
+	* Requirments:
 	* 1: jQuery
 	*
 */
@@ -31,7 +31,7 @@
 		  //default settings
 			var defaultSettings = $.extend({
 				selectors: {
-					target: '.activeHoverStates'
+					target: 'div.activeHoverStates'
 				},
 				fadeIn: true, //fade in
 				oddEven: true, //oddEven, first and last classes
@@ -39,7 +39,7 @@
 			}, options);
 			
 			return this.each(function(index, elment){
-				if ( $(this).children('div, li').length > 0 ) { //must be a div or li
+			  if ($(this).children('div, li').length > 0 ) { //must be a div or li
 					var	parentElmWrapper = $(this).parent().parent();
 					var	parentElm = $(this);
 					
@@ -94,12 +94,12 @@
 			});
 		}
 	};
-	$.fn.activeHoverStates = function( method ) {
+	$.fn.activeHoverStates = function(method) {
     if (methods[method]) {
-      return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+      return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
     } 
-		else if ( typeof method === 'object' || ! method ) {
-      return methods.init.apply( this, arguments );
+		else if (typeof method === 'object' || ! method) {
+      return methods.init.apply(this, arguments);
     } 
 		else {
       $.error('Error!');
