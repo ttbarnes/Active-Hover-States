@@ -33,28 +33,31 @@
 				selectors: {
 					target: '.activeHoverStates'
 				},
+				fadeIn: true, //fade in
 				oddEven: true, //oddEven, first and last classes
 				parentBgColourChange: true //parent BG colour change
 			}, options);
 			
 			return this.each(function(index, elment){
-				
 				if ( $(this).children('div, li').length > 0 ) { //must be a div or li
 					var	parentElmWrapper = $(this).parent().parent();
 					var	parentElm = $(this);
-					var	elm = $(this).children('div,li');
 					
-					function oddEven() {	//odd even
+					if (defaultSettings.fadeIn == true){ //fade in
+						parentElm.hide().fadeIn('slow');
+					}
+					
+					function oddEven() { //odd even
 						$(parentElm).each(function() { 
 							$(this).find('div:odd,li:odd').addClass('odd');
 							$(this).find('div:even,li:even').addClass('even');
 						});
 					}
-					
 					if (defaultSettings.oddEven == true){ //odd even
 					  oddEven();
 					}
 					
+					var	elm = $(this).children('div,li'); //target
 					if (defaultSettings.parentBgColourChange == true){ //parent BG colour change
 					  $(elm).each(function() {
 							$(this).hover(function(){ //hover/mouseOver
