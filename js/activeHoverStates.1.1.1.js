@@ -33,7 +33,8 @@
 				selectors: {
 					target: '.activeHoverStates'
 				},
-				oddEvenFirstLast: true
+				oddEvenFirstLast: true, //oddEven, first and last classes
+				parentBgColourChange: true //parent BG colour change
 			}, options);
 			
 			
@@ -55,19 +56,34 @@
 					  oddEvenFirstLast();
 					}
 					
-					$(elm).each(function() {
-						$(this).hover(function(){ //hover/mouseOver
-						  parentElmWrapper.addClass('activeHovering'); //add parent class
-							$(elm).not(this).addClass('active');
-							var elmHover = $(this);
-							$(elmHover).addClass('hovered');
-						},
-						function(){ //mouseOut
-						  parentElmWrapper.removeClass('activeHovering'); //remove parent class
-							$(elm).removeClass('active');
-							$(this).removeClass('hovered');
+					if (defaultSettings.parentBgColourChange == true){ //parent BG colour change
+					  $(elm).each(function() {
+							$(this).hover(function(){ //hover/mouseOver
+								parentElmWrapper.addClass('activeHovering'); //add parent class
+								$(elm).not(this).addClass('active');
+								var elmHover = $(this);
+								$(elmHover).addClass('hovered');
+							},
+							function(){ //mouseOut
+								parentElmWrapper.removeClass('activeHovering'); //remove parent class
+								$(elm).removeClass('active');
+								$(this).removeClass('hovered');
+							});
 						});
-					});
+					}
+					else { //parent BG colour change
+					  $(elm).each(function() {
+							$(this).hover(function(){ //hover/mouseOver
+								$(elm).not(this).addClass('active');
+								var elmHover = $(this);
+								$(elmHover).addClass('hovered');
+							},
+							function(){ //mouseOut
+								$(elm).removeClass('active');
+								$(this).removeClass('hovered');
+							});
+						});
+					}
 				}
 				else {
 					console.log('error! parent element contains something other than a div or li.') //error
