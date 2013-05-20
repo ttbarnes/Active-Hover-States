@@ -16,6 +16,18 @@
 	var methods = {
 		init : function(options) {
 		
+			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { //viewport meta tag manipulation - alter the viewport meta tag for better portait/landscape rendering (iphone,ipad detection)
+				var $viewport = $('head').children('meta[name="viewport"]'); //cache the viewport tag if the user is using an iPhone
+				$(window).bind('orientationchange', function() { //bind an event handler to the window object for the orientationchange event
+					if (window.orientation == 90 || window.orientation == -90 || window.orientation == 270) {
+						$viewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0'); //landscape
+					} 
+					else {
+						$viewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0'); //portrait
+					}
+				}).trigger('orientationchange'); //trigger an orientationchange event on the window object to initialize this code (basically in-case the user opens the page in landscape mode)
+			}
+
 		  //default settings
 			var defaultSettings = $.extend({
 				selectors: {
