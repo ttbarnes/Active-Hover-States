@@ -61,4 +61,14 @@
 .activeHoverStates li.active a,
 .activeHoverStates div.active a {
 	background:#1E1E1E;
+	color:#444;
+}
+
+/*active state - nextAll items*/
+#activeHoverStates li.activePrev a,
+#activeHoverStates div.activePrev a,
+.activeHoverStates li.activePrev a,
+.activeHoverStates div.activePrev a {
+	opacity:0.6;
+	border-color:#1E1E1E;
 }

@@ -35,7 +35,8 @@
 				},
 				fadeIn: true, //fade in
 				oddEven: true, //oddEven, first and last classes
-				parentBgColourChange: true //parent BG colour change
+				parentBgColourChange: true, //parent BG colour change
+				prevAllClasses: true //prevAll classes on hover
 			}, options);
 			
 			return this.each(function(index, elment){
@@ -65,11 +66,17 @@
 								$(elm).not(this).addClass('active');
 								var elmHover = $(this);
 								$(elmHover).addClass('hovered');
+								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+									$(this).prevAll().addClass('activePrev'); //add prevAll class
+								}
 							},
 							function(){ //mouseOut
 								parentElmWrapper.removeClass('activeHovering'); //remove parent class
 								$(elm).removeClass('active');
 								$(this).removeClass('hovered');
+								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
+								}
 							});
 						});
 					}
@@ -79,10 +86,16 @@
 								$(elm).not(this).addClass('active');
 								var elmHover = $(this);
 								$(elmHover).addClass('hovered');
+								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+									$(this).prevAll().addClass('activePrev'); //add prevAll class
+								}
 							},
 							function(){ //mouseOut
 								$(elm).removeClass('active');
 								$(this).removeClass('hovered');
+								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
+								}
 							});
 						});
 					}
