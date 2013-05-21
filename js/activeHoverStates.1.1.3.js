@@ -1,12 +1,12 @@
 /*
-	* Acive Hover States 1.1.2
+	* Acive Hover States 1.1.3
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
 	* Author: Tony Barnes
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 20/05/2013
+	* Last updated: 21/05/2013
 	* Requirments:
 	* 1: jQuery
 	*
