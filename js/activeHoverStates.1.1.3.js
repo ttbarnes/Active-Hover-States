@@ -1,12 +1,13 @@
 /*
 	* Acive Hover States 1.1.3
+	* Control and highlight parent or next/prev items
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
 	* Author: Tony Barnes
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 21/05/2013
+	* Last updated: 28/09/2013
 	* Requirments:
 	* 1: jQuery
 	*
@@ -17,19 +18,18 @@
 		init : function(options) {
 		
 			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { //viewport meta tag manipulation - alter the viewport meta tag for better portait/landscape rendering (iphone,ipad detection)
-				var $viewport = $('head').children('meta[name="viewport"]'); 
-				$(window).bind('orientationchange', function() { 
+				var headViewport = $('head').children('meta[name="viewport"]'); 
+				jQuery(window).bind('orientationchange', function() { 
 					if (window.orientation == 90 || window.orientation == -90 || window.orientation == 270) {
-						$viewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
+						headViewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
 					} 
 					else {
-						$viewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
+						headViewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
 					}
 				}).trigger('orientationchange');
 			}
 
-		  //default settings
-			var defaultSettings = $.extend({
+			var defaultSettings = $.extend({ //default settings
 				selectors: {
 					target: 'div.activeHoverStates'
 				},
@@ -40,70 +40,58 @@
 			}, options);
 			
 			return this.each(function(index, elment){
-			  if ($(this).children('div, li').length > 0 ) { //must be a div or li
-					var	parentElmWrapper = $(this).parent().parent();
-					var	parentElm = $(this);
+				
+			  if (jQuery(this).children('div, li').length > 0 ) { //must be a div or li
+					var	parentElmWrapper = jQuery(this).parent().parent();
+					var	parentElm = jQuery(this);
+					var	elm = jQuery(this).children('div,li');
 					
+					function oddEven() { //odd even
+						jQuery(parentElm).each(function() { 
+							jQuery(this).find('div:odd,li:odd').addClass('odd');
+							jQuery(this).find('div:even,li:even').addClass('even');
+						});
+					}
+					
+					//test and apply config/options
 					if (defaultSettings.fadeIn == true){ //fade in
 						parentElm.hide().fadeIn('slow');
 					}
 					
-					function oddEven() { //odd even
-						$(parentElm).each(function() { 
-							$(this).find('div:odd,li:odd').addClass('odd');
-							$(this).find('div:even,li:even').addClass('even');
-						});
-					}
 					if (defaultSettings.oddEven == true){ //odd even
 					  oddEven();
 					}
 					
-					var	elm = $(this).children('div,li'); //target
-					if (defaultSettings.parentBgColourChange == true){ //parent BG colour change
-					  $(elm).each(function() {
-							$(this).hover(function(){ //hover/mouseOver
-								parentElmWrapper.addClass('activeHovering'); //add parent class
-								$(elm).not(this).addClass('active');
-								var elmHover = $(this);
-								$(elmHover).addClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-									$(this).prevAll().addClass('activePrev'); //add prevAll class
-								}
-							},
-							function(){ //mouseOut
-								parentElmWrapper.removeClass('activeHovering'); //remove parent class
-								$(elm).removeClass('active');
-								$(this).removeClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
-								}
-							});
+					jQuery(elm).each(function() {
+						jQuery(this).hover(function(){
+							if (defaultSettings.parentBgColourChange == true){ //parent background colour change
+								parentElmWrapper.addClass('activeHovering');
+								jQuery(elm).not(this).addClass('active');
+							}
+														
+							jQuery(elm).not(this).addClass('active');
+							elmHover = $(this);
+							elmHover.addClass('hovered');
+							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								$(this).prevAll().addClass('activePrev');
+							}
+						},
+						function(){ //mouseOut
+							if (defaultSettings.parentBgColourChange == true){
+								parentElmWrapper.removeClass('activeHovering');
+							}
+							
+							jQuery(elm).removeClass('active');
+							jQuery(this).removeClass('hovered');
+							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								jQuery(this).prevAll().removeClass('activePrev');
+							}
 						});
-					}
-					else { //parent BG colour change
-					  $(elm).each(function() {
-							$(this).hover(function(){ //hover/mouseOver
-								$(elm).not(this).addClass('active');
-								var elmHover = $(this);
-								$(elmHover).addClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-									$(this).prevAll().addClass('activePrev'); //add prevAll class
-								}
-							},
-							function(){ //mouseOut
-								$(elm).removeClass('active');
-								$(this).removeClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
-								}
-							});
-						});
-					}
+					});
 				}
 				else {
 					console.log('error! parent element contains something other than a div or li.') //error
 				}
-				
 			});
 		}
 	};
