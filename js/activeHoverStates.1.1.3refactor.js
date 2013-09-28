@@ -28,8 +28,7 @@
 				}).trigger('orientationchange');
 			}
 
-		  //default settings
-			var defaultSettings = $.extend({
+			var defaultSettings = $.extend({ //default settings
 				selectors: {
 					target: 'div.activeHoverStates'
 				},
@@ -63,10 +62,9 @@
 					}
 					
 					jQuery(elm).each(function() {
-						jQuery(this).hover(function(){ //hover/mouseOver
-						
-							if (defaultSettings.parentBgColourChange == true){
-								parentElmWrapper.addClass('activeHovering'); //add parent class
+						jQuery(this).hover(function(){
+							if (defaultSettings.parentBgColourChange == true){ //parent background colour change
+								parentElmWrapper.addClass('activeHovering');
 								jQuery(elm).not(this).addClass('active');
 							}
 														
@@ -74,18 +72,18 @@
 							elmHover = $(this);
 							elmHover.addClass('hovered');
 							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								$(this).prevAll().addClass('activePrev'); //add prevAll class
+								$(this).prevAll().addClass('activePrev');
 							}
 						},
 						function(){ //mouseOut
 							if (defaultSettings.parentBgColourChange == true){
-								parentElmWrapper.removeClass('activeHovering'); //remove parent class
+								parentElmWrapper.removeClass('activeHovering');
 							}
 							
 							jQuery(elm).removeClass('active');
 							jQuery(this).removeClass('hovered');
 							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								jQuery(this).prevAll().removeClass('activePrev'); //remove prevAll classes
+								jQuery(this).prevAll().removeClass('activePrev');
 							}
 						});
 					});
@@ -93,7 +91,6 @@
 				else {
 					console.log('error! parent element contains something other than a div or li.') //error
 				}
-				
 			});
 		}
 	};
