@@ -40,6 +40,7 @@
 			}, options);
 			
 			return this.each(function(index, elment){
+				
 			  if ($(this).children('div, li').length > 0 ) { //must be a div or li
 					var	parentElmWrapper = $(this).parent().parent();
 					var	parentElm = $(this);
@@ -59,46 +60,34 @@
 					}
 					
 					var	elm = $(this).children('div,li'); //target
-					if (defaultSettings.parentBgColourChange == true){ //parent BG colour change
-					  $(elm).each(function() {
-							$(this).hover(function(){ //hover/mouseOver
+				
+					$(elm).each(function() {
+						$(this).hover(function(){ //hover/mouseOver
+						
+							if (defaultSettings.parentBgColourChange == true){
 								parentElmWrapper.addClass('activeHovering'); //add parent class
 								$(elm).not(this).addClass('active');
-								var elmHover = $(this);
-								$(elmHover).addClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-									$(this).prevAll().addClass('activePrev'); //add prevAll class
-								}
-							},
-							function(){ //mouseOut
+							}
+														
+							$(elm).not(this).addClass('active');
+							var elmHover = $(this);
+							$(elmHover).addClass('hovered');
+							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								$(this).prevAll().addClass('activePrev'); //add prevAll class
+							}
+						},
+						function(){ //mouseOut
+							if (defaultSettings.parentBgColourChange == true){
 								parentElmWrapper.removeClass('activeHovering'); //remove parent class
-								$(elm).removeClass('active');
-								$(this).removeClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
-								}
-							});
+							}
+							
+							$(elm).removeClass('active');
+							$(this).removeClass('hovered');
+							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
+								$(this).prevAll().removeClass('activePrev'); //remove prevAll classes
+							}
 						});
-					}
-					else { //parent BG colour change
-					  $(elm).each(function() {
-							$(this).hover(function(){ //hover/mouseOver
-								$(elm).not(this).addClass('active');
-								var elmHover = $(this);
-								$(elmHover).addClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-									$(this).prevAll().addClass('activePrev'); //add prevAll class
-								}
-							},
-							function(){ //mouseOut
-								$(elm).removeClass('active');
-								$(this).removeClass('hovered');
-								if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								  $(this).prevAll().removeClass('activePrev'); //remove prevAll classes
-								}
-							});
-						});
-					}
+					});
 				}
 				else {
 					console.log('error! parent element contains something other than a div or li.') //error
