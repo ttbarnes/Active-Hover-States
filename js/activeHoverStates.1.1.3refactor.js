@@ -1,12 +1,13 @@
 /*
 	* Acive Hover States 1.1.3
+	* Control and highlight parent or next/prev items
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
 	* Author: Tony Barnes
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 21/05/2013
+	* Last updated: 28/09/2013
 	* Requirments:
 	* 1: jQuery
 	*
