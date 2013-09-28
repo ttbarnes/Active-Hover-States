@@ -17,13 +17,13 @@
 		init : function(options) {
 		
 			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { //viewport meta tag manipulation - alter the viewport meta tag for better portait/landscape rendering (iphone,ipad detection)
-				var $viewport = $('head').children('meta[name="viewport"]'); 
-				$(window).bind('orientationchange', function() { 
+				var headViewport = $('head').children('meta[name="viewport"]'); 
+				jQuery(window).bind('orientationchange', function() { 
 					if (window.orientation == 90 || window.orientation == -90 || window.orientation == 270) {
-						$viewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
+						headViewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
 					} 
 					else {
-						$viewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
+						headViewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
 					}
 				}).trigger('orientationchange');
 			}
@@ -41,37 +41,38 @@
 			
 			return this.each(function(index, elment){
 				
-			  if ($(this).children('div, li').length > 0 ) { //must be a div or li
-					var	parentElmWrapper = $(this).parent().parent();
-					var	parentElm = $(this);
+			  if (jQuery(this).children('div, li').length > 0 ) { //must be a div or li
+					var	parentElmWrapper = jQuery(this).parent().parent();
+					var	parentElm = jQuery(this);
+					var	elm = jQuery(this).children('div,li');
 					
+					function oddEven() { //odd even
+						jQuery(parentElm).each(function() { 
+							jQuery(this).find('div:odd,li:odd').addClass('odd');
+							jQuery(this).find('div:even,li:even').addClass('even');
+						});
+					}
+					
+					//test and apply config/options
 					if (defaultSettings.fadeIn == true){ //fade in
 						parentElm.hide().fadeIn('slow');
 					}
 					
-					function oddEven() { //odd even
-						$(parentElm).each(function() { 
-							$(this).find('div:odd,li:odd').addClass('odd');
-							$(this).find('div:even,li:even').addClass('even');
-						});
-					}
 					if (defaultSettings.oddEven == true){ //odd even
 					  oddEven();
 					}
 					
-					var	elm = $(this).children('div,li'); //target
-				
-					$(elm).each(function() {
-						$(this).hover(function(){ //hover/mouseOver
+					jQuery(elm).each(function() {
+						jQuery(this).hover(function(){ //hover/mouseOver
 						
 							if (defaultSettings.parentBgColourChange == true){
 								parentElmWrapper.addClass('activeHovering'); //add parent class
-								$(elm).not(this).addClass('active');
+								jQuery(elm).not(this).addClass('active');
 							}
 														
-							$(elm).not(this).addClass('active');
-							var elmHover = $(this);
-							$(elmHover).addClass('hovered');
+							jQuery(elm).not(this).addClass('active');
+							elmHover = $(this);
+							elmHover.addClass('hovered');
 							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
 								$(this).prevAll().addClass('activePrev'); //add prevAll class
 							}
@@ -81,10 +82,10 @@
 								parentElmWrapper.removeClass('activeHovering'); //remove parent class
 							}
 							
-							$(elm).removeClass('active');
-							$(this).removeClass('hovered');
+							jQuery(elm).removeClass('active');
+							jQuery(this).removeClass('hovered');
 							if (defaultSettings.prevAllClasses == true){ //prevAll classes on hover
-								$(this).prevAll().removeClass('activePrev'); //remove prevAll classes
+								jQuery(this).prevAll().removeClass('activePrev'); //remove prevAll classes
 							}
 						});
 					});
