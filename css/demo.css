@@ -1,13 +1,13 @@
 /********************************
-* Active Hover States 1.1.3
-	* Control and highlight parent or next/prev items
-	* http://github.com/ttbarnes/Active-Hover-States
+* listIconManipulator Alpha 1.1.1
+	* A responsive portfolio layout with vertical overlay, dynamic height calculation/resizing, tooltips, colour schemes and more
+	* URL to go here
 	*
 	* Author: Tony Barnes
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 28/09/2013
+	* Last updated: 24/08/2013
   ********************************
   plugin demo styles
 **********************************/
@@ -97,12 +97,17 @@ input[type=image] {
   border: 0;
 }
 html {
-  background:#222;
+  background: #181818;
 }
 body {
   font-family: courier new, arial;
-  color:#888;
-	background:#222;
+  color: #888;
+  background-image: linear-gradient(bottom, #353535 18%, #181818 100%);
+  background-image: -o-linear-gradient(bottom, #353535 18%, #181818 100%);
+  background-image: -moz-linear-gradient(bottom, #353535 18%, #181818 100%);
+  background-image: -webkit-linear-gradient(bottom, #353535 18%, #181818 100%);
+  background-image: -ms-linear-gradient(bottom, #353535 18%, #181818 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.18, #353535), color-stop(1, #181818));
 }
 ::-moz-selection {
   background: #141414;
@@ -114,32 +119,15 @@ body {
   color: #CCC;
   text-shadow: none;
 }
-h3 {
-	text-align:center;
-	padding:0 1em 2em 1em;
-}
-p {
-	padding-bottom:1em;
-}
 /*main content*/
-#activeHoverStatesWrapper {
-	width:100%;
-	max-width:100%;
-}
-#activeHoverStatesWrapper .content {
+.wrapper {
   position: relative;
   margin: 0 auto;
-	padding-top:40px;
-	width:100%;
-  max-width: 1000px;
-}
-#activeHoverStatesWrapper .innerWrap {
-	padding:1em;
-	background:#000;
-	
+  width: 1000px;
 }
 /*header*/
 .header {
+  margin-bottom: 40px;
   background: #353535;
   text-align: center;
   color: #888;
@@ -153,6 +141,7 @@ p {
   font-size: 0.8em;
 }
 .header p {
+  display: none;
   color: #565656;
   letter-spacing: -2px;
   font-size: 0.950em;
@@ -162,52 +151,98 @@ p {
   font-size: 0.9em;
   color: #555;
 }
+/*bottom info*/
+.bottom {
+  margin: 40px 0 60px 0;
+}
+.bottom * {
+  color: #888;
+}
+.bottom p {
+  margin-bottom: 0.5em;
+}
+.bottom a {
+  font-weight: bold;
+  color: #999;
+}
+.bottom a:hover {
+  text-decoration: none;
+}
+h3 {
+  text-align: center;
+  padding: 0 1em 2em 1em;
+}
 /*footer*/
 .footer {
-  margin-top: 40px;
   background: #222;
+  min-height: 100px;
   text-align: center;
   font-family: courier new, arial;
   color: #888;
 }
 .footer h2 {
-	padding:15px 0;
+  padding-top: 35px;
   font-size: 1.4em;
 }
-
-/*responsive*/
-@media(max-width:1000px){
-	.header {
-		margin-bottom:30px;
-	}
-	.header h1 {
-		font-size:2em;
-		padding:15px 10px;
-	}
-	.footer {
-		margin-top:20px;
-	}
-	.footer h2 {
-		font-size:1.3em;
-	}
+@media (max-width: 1000px) {
+  ul,
+  ol {
+    font-size: 0.950em;
+  }
+  ul li,
+  ol li {
+    padding: 3px 0;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  .header h1 {
+    font-size: 2em;
+    padding: 15px 10px;
+  }
+  .listIconManipulatorExample {
+    padding: 20px 20px 0 20px;
+  }
+  .bottom {
+    margin: 20px 20px 35px 20px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .bottom p {
+    padding: 0.5em 0 0.8em 0;
+    margin: 0.5em 0;
+    border-bottom: solid 1px #444;
+  }
+  .bottom p.last {
+    border: 0 none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .bottom a:hover {
+    text-decoration: underline;
+  }
+  .footer h2 {
+    font-size: 1.3em;
+  }
 }
-
-@media(max-width:480px) {
-	h3 {
-		padding:1em;
-	}
-	.header {
-		margin-bottom:0;
-	}
-	.header h1 {
-		font-size:1.5em;
-	}
-	.footer {
-		margin-top:0;
-	}
-	
-	.footer h2 {
-		font-size:1em;
-	}
-	
+@media (max-width: 480px) {
+  h3 {
+    padding: 1em;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+  .header h1 {
+    font-size: 1.5em;
+  }
+  .bottom {
+    margin: 15px 10px 20px 10px;
+    font-size: 0.8em;
+  }
+  .footer h2 {
+    font-size: 1em;
+  }
 }
