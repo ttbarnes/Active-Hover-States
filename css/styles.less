@@ -48,6 +48,7 @@
 				-o-transition: all 0.1s linear;
 				transition: all 0.1s linear;
 			}
+			
 			/*hover state*/
 			&.hovered {
 				 a {
@@ -64,20 +65,46 @@
 			}
 			/*active state - nextAll items*/
 			&.activePrev {
-				opacity:0.6;
+				opacity:0.5;
 				border-color:#1E1E1E;
-			}
-			
+			}	
 		}
-
 		
+		/*custom colours*/
+		&.activeHoverStates1 {
+			li,
+			div {
+				 a {
+					 background:#7c3232;
+					 color:#EEE;
+					 border-color:#612727;
+
+				   &:hover {
+						background:#943d3d; 
+					 }
+				 }
+			}
+		}
+		&.activeHoverStates2 {
+			li,
+			div {
+				 a {
+					 background:#6a7c32;
+					 color:#EEE;
+					 border-color:#4e5b24;
+
+				   &:hover {
+						background:#7f943b; 
+					 }
+				 }
+			}
+		}
 	}
 }
+/*parent background colour change*/
 .activeHovering {
 	background:#222;
 }
-
-
 
 @media(max-width:1000px){
 	.activeHoverStatesWrapper .content {
