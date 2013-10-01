@@ -1,5 +1,5 @@
 /*
-	* Active Hover States 1.1.3
+	* Active Hover States 1.1.4
 	* Control and highlight parent or next/prev items
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
