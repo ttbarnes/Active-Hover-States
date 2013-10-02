@@ -13,7 +13,7 @@
 **********************************/
 /*active hover states*/
 .activeHoverStatesWrapper {
-  background: #161616;
+  background: #222;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -109,7 +109,7 @@
 }
 /*parent background colour change*/
 .activeHovering {
-  background: #222;
+  background: #161616;
 }
 @media (max-width: 1000px) {
   .activeHoverStatesWrapper .content {

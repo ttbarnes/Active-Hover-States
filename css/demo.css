@@ -102,12 +102,7 @@ html {
 body {
   font-family: courier new, arial;
   color: #888;
-  background-image: linear-gradient(bottom, #353535 18%, #181818 100%);
-  background-image: -o-linear-gradient(bottom, #353535 18%, #181818 100%);
-  background-image: -moz-linear-gradient(bottom, #353535 18%, #181818 100%);
-  background-image: -webkit-linear-gradient(bottom, #353535 18%, #181818 100%);
-  background-image: -ms-linear-gradient(bottom, #353535 18%, #181818 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.18, #353535), color-stop(1, #181818));
+  background: #161616;
 }
 ::-moz-selection {
   background: #141414;
