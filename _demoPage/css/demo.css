@@ -1,1 +1,527 @@
-body{text-align:center;color:#919191;background:#222}ul,ol{list-style-type:none!important;font-size:1em}ul ul,ol ul,ul ol,ol ol{font-size:1em}.top-bar-section ul li.download{display:none}@media only screen{.column,.columns{padding-top:4em;padding-bottom:4em}}.top-bar{line-height:45px;height:45px}.top-bar .name{height:45px}.top-bar .name h1{line-height:45px;font-size:1.250em}.top-bar .name h1 a{width:310px;padding:0 30px 0 15px}div.row .large-12 .content,.contain-to-grid .content,#sectionDownload .content large-1{width:100%;max-width:1000px;margin:0 auto}#sectionIntro .topLimExampleWrapper,div.innerWrap{clear:both;width:100%;margin:0 auto;text-align:center}#sectionIntro .topLimExampleWrapper .listIconManipulator,div.innerWrap .listIconManipulator{text-align:center}div#sectionIntro,div#sectionAuthor{background:#b6d5e6;color:#366681}div#sectionIntro ::-moz-selection,div#sectionAuthor ::-moz-selection{background:#366681;color:#eaeaea;text-shadow:none}div#sectionIntro ::selection,div#sectionAuthor ::selection{background:#366681;color:#eaeaea;text-shadow:none}div#sectionIntro h2,div#sectionAuthor h2,div#sectionIntro a,div#sectionAuthor a{color:#366681}div#sectionIntro p.headingSub,div#sectionAuthor p.headingSub{color:#96aebc}div#sectionIntro .topLimExampleWrapper,div#sectionAuthor .topLimExampleWrapper{margin:0 auto}div#sectionIntro .topLimExampleWrapper .column,div#sectionAuthor .topLimExampleWrapper .column,div#sectionIntro .topLimExampleWrapper .columns,div#sectionAuthor .topLimExampleWrapper .columns{padding-top:1em;padding-bottom:1em;margin:0 auto;float:none}div#sectionIntro .topLimExampleWrapper .column ul li,div#sectionAuthor .topLimExampleWrapper .column ul li,div#sectionIntro .topLimExampleWrapper .columns ul li,div#sectionAuthor .topLimExampleWrapper .columns ul li{color:#96aebc}div#sectionIntro .topLimExampleWrapper .column ul li a,div#sectionAuthor .topLimExampleWrapper .column ul li a,div#sectionIntro .topLimExampleWrapper .columns ul li a,div#sectionAuthor .topLimExampleWrapper .columns ul li a{color:#96aebc}#sectionTooltips{background:#a7ccb5;color:#266741}#sectionTooltips ::-moz-selection{background:#266741;color:#EEE;text-shadow:none}#sectionTooltips ::selection{background:#266741;color:#EEE;text-shadow:none}#sectionTooltips h2,#sectionTooltips a{color:#266741}#sectionTooltips ul li{color:#68a581}#sectionTooltips ul li a{color:#68a581}#sectionExamples{background:#cac5a8;color:#675826}#sectionExamples .large-2{font-size:1em}#sectionExamples ::-moz-selection{background:#675826;color:#e6e6e6;text-shadow:none}#sectionExamples ::selection{background:#675826;color:#e6e6e6;text-shadow:none}#sectionExamples h2,#sectionExamples a{color:#675826}#sectionExamples .large-2{padding-top:1em;padding-bottom:1em}#sectionExamples .large-2 .panel{padding:.5em .5em .7em .5em;width:98%;background:#CCC;position:relative;margin:0 auto}#sectionExamples .large-2 .panel h5{color:#AAA;text-align:left;font-size:1.1em;padding:0 .5em;text-decoration:underline}#sectionExamples .large-2 .panel ul{margin:0;padding:0 .5em}#sectionExamples .large-2 .panel ul li{padding:0 .5em}#sectionExamples .large-2 .panel ul ul li{padding:0}#sectionExamples .large-2 .panel ul div.toolTip{color:#EEE}#sectionExamples .large-2 .panel ul div.toolTip a{color:#EEE;text-decoration:underline}#sectionExamples .large-2 .panel ul div.toolTip a:hover{text-decoration:none}#sectionExamples .large-2 .panel ul.moreInfo div.toolTip{min-width:100px}#sectionExamples .large-2 .panel ul.warning div.toolTip{min-width:165px}#sectionExamples .large-2 .panel ul.textReplace span.icon{display:inline-block;min-width:44px}#sectionExamples .large-2 .panel ul.toolTipMe div.toolTip{min-width:80px}#sectionDownload{background:#d3d3d3;color:#222}#sectionDownload ::-moz-selection{background:#222;color:#d3d3d3;text-shadow:none}#sectionDownload ::selection{background:#222;color:#d3d3d3;text-shadow:none}#sectionDownload .row{margin-left:0;margin-right:0}#sectionDownload .large-1{margin:0 auto;text-align:left;max-width:500px}#sectionDownload h2,#sectionDownload a{margin-bottom:.2em}#sectionDownload p.small{display:inline-block;color:#646464;margin-bottom:3em;font-size:.850em}#sectionDownload p.small a{color:#989898;text-decoration:none}#sectionDownload div.row p.small{padding-left:1em}#sectionDownload div.githubBtns{width:150px;margin:.5em auto 2em auto;text-align:center;position:relative;clear:both}#sectionDownload div.rowShare{text-align:right!important;padding-top:10px}#sectionInstallation div.row,#sectionOptions div.row{margin:0}#sectionInstallation div.row h5,#sectionOptions div.row h5{color:#CCC;text-align:left}#sectionInstallation div.row div.code,#sectionOptions div.row div.code{background:#CCC;color:#000;text-align:justify;overflow:auto;padding:.5em;margin:0 0 3em 0}#sectionInstallation div.row div.code p,#sectionOptions div.row div.code p{margin:0;padding:0}#sectionInstallation div.row div.codeJs,#sectionOptions div.row div.codeJs{text-align:left}#sectionInstallation div.row div.codeJs p,#sectionOptions div.row div.codeJs p{margin:0 0 .6em 0}#sectionInstallation div.row div.codeJs p.last,#sectionOptions div.row div.codeJs p.last{margin:0}#sectionInstallation{background:#222;color:#c5c5c5}#sectionInstallation ::-moz-selection{background:#d3d3d3;color:#222;text-shadow:none}#sectionInstallation ::selection{background:#c5c5c5;color:#e8e8e8;text-shadow:none}#sectionInstallation h2{margin-bottom:.8em;color:#c5c5c5}#sectionInstallation p.small{color:#646464}#sectionOptions{background:#b8c19d;color:#556033}#sectionOptions ::-moz-selection{background:#556033;color:#b8c19d;text-shadow:none}#sectionOptions ::selection{background:#556033;color:#b8c19d;text-shadow:none}#sectionOptions h2{color:#556033;margin-bottom:.8em}#sectionAuthor .content h6{margin-bottom:.5em}#sectionAuthor .content p{margin-bottom:.2em;font-size:.9em}#sectionAuthor .content p a{color:#8ba5b3;font-size:.9em}#sectionAuthor .content p a:hover{color:#366681}@media only screen and (min-width:58.75em){.top-bar{line-height:85px;height:85px}.top-bar .name{height:45px}.top-bar .name h1{line-height:85px;font-size:1.6em}.top-bar .name h1 a{width:350px;padding:0 30px}.top-bar-section ul li.download{display:block}ul,ol{list-style-type:none;font-size:1.4em}ul ul,ol ul,ul ol,ol ol{font-size:1em}.column,.columns{padding-top:6em;padding-bottom:6em}div#sectionIntro .topLimExampleWrapper .column,div#sectionIntro .topLimExampleWrapper .columns{padding-top:2.5em}#sectionTooltips div.toolTip{font-size:.6em}#sectionExamples .large-2 .panel{font-size:.750em}#sectionExamples .large-2 .panel h5{font-size:1.6em}#sectionInstallation .content,#sectionOptions .content{width:60%}#sectionInstallation .content h5,#sectionOptions .content h5{font-size:1.125em}}@media only screen and (max-width:800px){.listIconManipulator{text-align:center!important}.column,.columns{padding-top:3em;padding-bottom:3em}div#sectionIntro .topLimExampleWrapper .columns{padding-top:0;padding-bottom:0}#sectionExamples .large-2 .panel h5{text-align:center}div#sectionDownload p.small{margin-bottom:2em}div#sectionDownload .row{text-align:center}div#sectionDownload .row p.small{display:none}div#sectionDownload .row a.button{margin-bottom:1em;min-width:250px}#sectionInstallation .content h5,#sectionOptions .content h5{font-size:1em}#sectionInstallation .content .row .code,#sectionOptions .content .row .code{font-size:.9em}}@media only screen and (max-width:500px){.top-bar-section ul li>a{font-size:.750em;padding:8px 0 8px 15px}.top-bar .name h1{font-size:1.2em}.top-bar .name h1 a{width:35%;max-width:357px;min-width:300px;padding:0 15px}.top-bar .toggle-topbar.menu-icon{margin-top:-18px}h2{font-size:1.8em}#sectionExamples .large-2 .panel ul{text-align:left!important;font-size:.9em}#sectionExamples .large-2 .panel ul ul{font-size:1em}}@media only screen and (max-width:450px){.top-bar .name h1{font-size:.850em}.top-bar .name h1 a{width:175px;max-width:260px;min-width:175px}.top-bar .toggle-topbar.menu-icon{margin-top:-21px}}@media only screen and (min-device-width:320px) and (max-device-width:568px) and (orientation:landscape){.top-bar-section ul li>a{font-size:.550em;padding:6px 0 6px 15px}.row{font-size:.9em}#sectionInstallation .content .row h5,#sectionOptions .content .row h5{font-size:.7em}#sectionInstallation .content .row .code,#sectionOptions .content .row .code{font-size:.7em}#sectionExamples .large-2 .panel{font-size:.8em}}.lt-ie9 .top-bar .toggle-topbar.menu-icon{display:none}.lt-ie9 .column,.lt-ie9 .columns{padding-top:3em;padding-bottom:3em}
+/************************************
+main - reset/typography
+*************************************/
+body {
+  text-align: center;
+  color: #919191;
+  background: #222222;
+}
+ul,
+ol {
+  list-style-type: none !important;
+  font-size: 1em;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  font-size: 1em;
+}
+.top-bar-section ul li.download {
+  display: none;
+}
+@media only screen {
+  .column,
+  .columns {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+.top-bar {
+  line-height: 45px;
+  height: 45px;
+}
+.top-bar .name {
+  height: 45px;
+}
+.top-bar .name h1 {
+  line-height: 45px;
+  font-size: 1.250em;
+}
+.top-bar .name h1 a {
+  width: 310px;
+  padding: 0 30px 0 15px;
+}
+/************************************
+shared page/element layout, padding
+*************************************/
+div.row .large-12 .content,
+.contain-to-grid .content,
+#sectionDownload .content large-1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#sectionIntro .topLimExampleWrapper,
+div.innerWrap {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#sectionIntro .topLimExampleWrapper .listIconManipulator,
+div.innerWrap .listIconManipulator {
+  text-align: center;
+}
+/************************************
+section specific
+*************************************/
+div#sectionIntro,
+div#sectionAuthor {
+  background: #b6d5e6;
+  color: #366681;
+}
+div#sectionIntro ::-moz-selection,
+div#sectionAuthor ::-moz-selection {
+  background: #366681;
+  color: #EAEAEA;
+  text-shadow: none;
+}
+div#sectionIntro ::selection,
+div#sectionAuthor ::selection {
+  background: #366681;
+  color: #EAEAEA;
+  text-shadow: none;
+}
+div#sectionIntro h2,
+div#sectionAuthor h2,
+div#sectionIntro a,
+div#sectionAuthor a {
+  color: #366681;
+}
+div#sectionIntro p.headingSub,
+div#sectionAuthor p.headingSub {
+  color: #96aebc;
+}
+div#sectionIntro .topLimExampleWrapper,
+div#sectionAuthor .topLimExampleWrapper {
+  margin: 0 auto;
+}
+div#sectionIntro .topLimExampleWrapper .column,
+div#sectionAuthor .topLimExampleWrapper .column,
+div#sectionIntro .topLimExampleWrapper .columns,
+div#sectionAuthor .topLimExampleWrapper .columns {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  float: none;
+}
+div#sectionIntro .topLimExampleWrapper .column ul li,
+div#sectionAuthor .topLimExampleWrapper .column ul li,
+div#sectionIntro .topLimExampleWrapper .columns ul li,
+div#sectionAuthor .topLimExampleWrapper .columns ul li {
+  color: #96aebc;
+}
+div#sectionIntro .topLimExampleWrapper .column ul li a,
+div#sectionAuthor .topLimExampleWrapper .column ul li a,
+div#sectionIntro .topLimExampleWrapper .columns ul li a,
+div#sectionAuthor .topLimExampleWrapper .columns ul li a {
+  color: #96aebc;
+}
+#sectionTooltips {
+  background: #a7ccb5;
+  color: #266741;
+}
+#sectionTooltips ::-moz-selection {
+  background: #266741;
+  color: #EEE;
+  text-shadow: none;
+}
+#sectionTooltips ::selection {
+  background: #266741;
+  color: #EEE;
+  text-shadow: none;
+}
+#sectionTooltips h2,
+#sectionTooltips a {
+  color: #266741;
+}
+#sectionTooltips ul li {
+  color: #68a581;
+}
+#sectionTooltips ul li a {
+  color: #68a581;
+}
+#sectionExamples {
+  background: #cac5a8;
+  color: #675826;
+}
+#sectionExamples .large-2 {
+  font-size: 1em;
+}
+#sectionExamples ::-moz-selection {
+  background: #675826;
+  color: #E6E6E6;
+  text-shadow: none;
+}
+#sectionExamples ::selection {
+  background: #675826;
+  color: #E6E6E6;
+  text-shadow: none;
+}
+#sectionExamples h2,
+#sectionExamples a {
+  color: #675826;
+}
+#sectionExamples .large-2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#sectionExamples .large-2 .panel {
+  padding: .5em .5em .7em .5em;
+  width: 98%;
+  background: #CCC;
+  position: relative;
+  margin: 0 auto;
+}
+#sectionExamples .large-2 .panel h5 {
+  color: #AAA;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 0 0.5em;
+  text-decoration: underline;
+}
+#sectionExamples .large-2 .panel ul {
+  margin: 0;
+  padding: 0 0.5em;
+}
+#sectionExamples .large-2 .panel ul li {
+  padding: 0 0.5em;
+}
+#sectionExamples .large-2 .panel ul ul li {
+  padding: 0;
+}
+#sectionExamples .large-2 .panel ul div.toolTip {
+  color: #EEE;
+}
+#sectionExamples .large-2 .panel ul div.toolTip a {
+  color: #EEE;
+  text-decoration: underline;
+}
+#sectionExamples .large-2 .panel ul div.toolTip a:hover {
+  text-decoration: none;
+}
+#sectionExamples .large-2 .panel ul.moreInfo div.toolTip {
+  min-width: 100px;
+}
+#sectionExamples .large-2 .panel ul.warning div.toolTip {
+  min-width: 165px;
+}
+#sectionExamples .large-2 .panel ul.textReplace span.icon {
+  display: inline-block;
+  min-width: 44px;
+}
+#sectionExamples .large-2 .panel ul.toolTipMe div.toolTip {
+  min-width: 80px;
+}
+#sectionDownload {
+  background: #d3d3d3;
+  color: #222222;
+}
+#sectionDownload ::-moz-selection {
+  background: #222222;
+  color: #d3d3d3;
+  text-shadow: none;
+}
+#sectionDownload ::selection {
+  background: #222222;
+  color: #d3d3d3;
+  text-shadow: none;
+}
+#sectionDownload .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#sectionDownload .large-1 {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 500px;
+}
+#sectionDownload h2,
+#sectionDownload a {
+  margin-bottom: 0.2em;
+}
+#sectionDownload p.small {
+  display: inline-block;
+  color: #646464;
+  margin-bottom: 3em;
+  font-size: 0.850em;
+}
+#sectionDownload p.small a {
+  color: #989898;
+  text-decoration: none;
+}
+#sectionDownload div.row p.small {
+  padding-left: 1em;
+}
+#sectionDownload div.githubBtns {
+  width: 150px;
+  margin: 0.5em auto 2em auto;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
+#sectionDownload div.rowShare {
+  text-align: right !important;
+  padding-top: 10px;
+}
+#sectionInstallation div.row,
+#sectionOptions div.row {
+  margin: 0;
+}
+#sectionInstallation div.row h5,
+#sectionOptions div.row h5 {
+  color: #CCC;
+  text-align: left;
+}
+#sectionInstallation div.row div.code,
+#sectionOptions div.row div.code {
+  background: #CCC;
+  color: #000;
+  text-align: justify;
+  overflow: auto;
+  padding: 0.5em;
+  margin: 0 0 3em 0;
+}
+#sectionInstallation div.row div.code p,
+#sectionOptions div.row div.code p {
+  margin: 0;
+  padding: 0;
+}
+#sectionInstallation div.row div.codeJs,
+#sectionOptions div.row div.codeJs {
+  text-align: left;
+}
+#sectionInstallation div.row div.codeJs p,
+#sectionOptions div.row div.codeJs p {
+  margin: 0 0 0.6em 0;
+}
+#sectionInstallation div.row div.codeJs p.last,
+#sectionOptions div.row div.codeJs p.last {
+  margin: 0;
+}
+#sectionInstallation {
+  background: #222222;
+  color: #C5C5C5;
+}
+#sectionInstallation ::-moz-selection {
+  background: #d3d3d3;
+  color: #222222;
+  text-shadow: none;
+}
+#sectionInstallation ::selection {
+  background: #C5C5C5;
+  color: #E8E8E8;
+  text-shadow: none;
+}
+#sectionInstallation h2 {
+  margin-bottom: 0.8em;
+  color: #C5C5C5;
+}
+#sectionInstallation p.small {
+  color: #646464;
+}
+#sectionOptions {
+  background: #b8c19d;
+  color: #556033;
+}
+#sectionOptions ::-moz-selection {
+  background: #556033;
+  color: #b8c19d;
+  text-shadow: none;
+}
+#sectionOptions ::selection {
+  background: #556033;
+  color: #b8c19d;
+  text-shadow: none;
+}
+#sectionOptions h2 {
+  color: #556033;
+  margin-bottom: 0.8em;
+}
+#sectionAuthor .content h6 {
+  margin-bottom: 0.5em;
+}
+#sectionAuthor .content p {
+  margin-bottom: 0.2em;
+  font-size: 0.9em;
+}
+#sectionAuthor .content p a {
+  color: #8BA5B3;
+  font-size: 0.9em;
+}
+#sectionAuthor .content p a:hover {
+  color: #366681;
+}
+/************************************
+responsive
+*************************************/
+@media only screen and (min-width: 58.75em) {
+  .top-bar {
+    line-height: 85px;
+    height: 85px;
+  }
+  .top-bar .name {
+    height: 45px;
+  }
+  .top-bar .name h1 {
+    line-height: 85px;
+    font-size: 1.6em;
+  }
+  .top-bar .name h1 a {
+    width: 350px;
+    padding: 0 30px;
+  }
+  .top-bar-section ul li.download {
+    display: block;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    font-size: 1.4em;
+  }
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
+    font-size: 1em;
+  }
+  .column,
+  .columns {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  div#sectionIntro .topLimExampleWrapper .column,
+  div#sectionIntro .topLimExampleWrapper .columns {
+    padding-top: 2.5em;
+  }
+  #sectionTooltips div.toolTip {
+    font-size: 0.6em;
+  }
+  #sectionExamples .large-2 .panel {
+    font-size: 0.750em;
+  }
+  #sectionExamples .large-2 .panel h5 {
+    font-size: 1.6em;
+  }
+  #sectionInstallation .content,
+  #sectionOptions .content {
+    width: 60%;
+  }
+  #sectionInstallation .content h5,
+  #sectionOptions .content h5 {
+    font-size: 1.125em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  
+}
+@media only screen and (max-width: 800px) {
+  .listIconManipulator {
+    text-align: center !important;
+  }
+  .column,
+  .columns {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  div#sectionIntro .topLimExampleWrapper .columns {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #sectionExamples .large-2 .panel h5 {
+    text-align: center;
+  }
+  div#sectionDownload p.small {
+    margin-bottom: 2em;
+  }
+  div#sectionDownload .row {
+    text-align: center;
+  }
+  div#sectionDownload .row p.small {
+    display: none;
+  }
+  div#sectionDownload .row a.button {
+    margin-bottom: 1em;
+    min-width: 250px;
+  }
+  #sectionInstallation .content h5,
+  #sectionOptions .content h5 {
+    font-size: 1em;
+  }
+  #sectionInstallation .content .row .code,
+  #sectionOptions .content .row .code {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top-bar-section ul li > a {
+    font-size: 0.750em;
+    padding: 8px 0 8px 15px;
+  }
+  .top-bar .name h1 {
+    font-size: 1.2em;
+  }
+  .top-bar .name h1 a {
+    width: 35%;
+    max-width: 357px;
+    min-width: 300px;
+    padding: 0 15px;
+  }
+  .top-bar .toggle-topbar.menu-icon {
+    margin-top: -18px;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  #sectionExamples .large-2 .panel ul {
+    text-align: left !important;
+    font-size: 0.9em;
+  }
+  #sectionExamples .large-2 .panel ul ul {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .top-bar .name h1 {
+    font-size: 0.850em;
+  }
+  .top-bar .name h1 a {
+    width: 175px;
+    max-width: 260px;
+    min-width: 175px;
+  }
+  .top-bar .toggle-topbar.menu-icon {
+    margin-top: -21px;
+  }
+}
+/*smartphones - landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .top-bar-section ul li > a {
+    font-size: 0.550em;
+    padding: 6px 0 6px 15px;
+  }
+  .row {
+    font-size: 0.9em;
+  }
+  #sectionInstallation .content .row h5,
+  #sectionOptions .content .row h5 {
+    font-size: 0.7em;
+  }
+  #sectionInstallation .content .row .code,
+  #sectionOptions .content .row .code {
+    font-size: 0.7em;
+  }
+  #sectionExamples .large-2 .panel {
+    font-size: 0.8em;
+  }
+}
+/*ie9 below*/
+.lt-ie9 .top-bar .toggle-topbar.menu-icon {
+  display: none;
+}
+.lt-ie9 .column,
+.lt-ie9 .columns {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
