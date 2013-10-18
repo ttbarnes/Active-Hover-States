@@ -16,18 +16,6 @@
 	
 	var methods = {
 		init : function(options) {
-		
-			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) { //viewport meta tag manipulation - alter the viewport meta tag for better portait/landscape rendering (iphone,ipad detection)
-				var headViewport = $('head').children('meta[name="viewport"]'); 
-				jQuery(window).bind('orientationchange', function() { 
-					if (window.orientation == 90 || window.orientation == -90 || window.orientation == 270) {
-						headViewport.attr('content', 'height=device-width,width=device-height,initial-scale=1.0,maximum-scale=1.0');
-					} 
-					else {
-						headViewport.attr('content', 'height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0');
-					}
-				}).trigger('orientationchange');
-			}
 
 			var defaultSettings = $.extend({ //default settings
 				selectors: {
