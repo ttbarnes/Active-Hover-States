@@ -1,5 +1,5 @@
 /*
-	* Active Hover States 1.1.4
+	* Active Hover States 1.1.5
 	* Control and highlight parent or next/prev items
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
@@ -7,7 +7,7 @@
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 28/09/2013
+	* Last updated: 18/10/2013
 	* Requirments:
 	* 1: jQuery
 	*
