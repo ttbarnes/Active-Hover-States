@@ -95,30 +95,22 @@
 .activeHoverStates.activeHoverStates2 div a:hover {
   background: #7f943b;
 }
-/*parent background colour change*/
-.activeHovering {
-  background: #161616;
-}
-@media (max-width: 1000px) {
-  .activeHoverStatesWrapper .content {
-    width: 100%;
-    margin: 0;
-  }
-  .activeHoverStatesWrapper .content ul li,
-  .activeHoverStatesWrapper .content ol li,
-  .activeHoverStatesWrapper .content div li,
-  .activeHoverStatesWrapper .content ul div,
-  .activeHoverStatesWrapper .content ol div,
-  .activeHoverStatesWrapper .content div div {
-    padding: 2px 0;
-  }
-  .activeHoverStatesWrapper .content ul li a,
-  .activeHoverStatesWrapper .content ol li a,
-  .activeHoverStatesWrapper .content div li a,
-  .activeHoverStatesWrapper .content ul div a,
-  .activeHoverStatesWrapper .content ol div a,
-  .activeHoverStatesWrapper .content div div a {
-    padding: 0.5em 0;
-    border: 0 none;
+/*
+@media(max-width:1000px){
+	.activeHoverStatesWrapper .content {
+		width:100%;
+		margin:0;
+		ul,ol,div {
+			li,
+			div {
+				padding:2px 0;					
+				a {
+					padding:0.5em 0;
+					border:0 none;
+				}
+				
+			}
+		}
   }
 }
+*/
