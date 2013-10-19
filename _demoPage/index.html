@@ -35,7 +35,7 @@
           <div class="large-3 columns">
             <div class="panel">
               <div class="innerWrap">
-                <ul class="egTop1 activeHoverStates">
+                <ul class="egTop1 activeHoverStates" id="activeHoverStatesExampleTop">
                   <li><a href="#">Hover over me!</a></li>
                   <li><a href="#">list item</a></li>
                   <li><a href="#">List item 3</a></li>
@@ -233,8 +233,13 @@
   <script src="js/activeHoverStates.1.1.5.js"></script>
   <script type="text/javascript">
     //$(document).ready(function(e) {
-      $("#activeHoverStatesExample1").activeHoverStates();
+      $("#activeHoverStatesExampleTop").activeHoverStates({
+        oddEven:false, //odd even classes
+        prevAllClasses:true //prevAll classes on hover
+			});
 			
+      $("#activeHoverStatesExample1").activeHoverStates();
+				
       $("#activeHoverStatesExample2").activeHoverStates({
         oddEven:false, //odd even classes
         prevAllClasses:true //prevAll classes on hover
