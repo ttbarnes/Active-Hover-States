@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0">
-  <title>Tony Barnes - Web Developer, Web Designer | jQuery plugin - Active Hover States</title>
+  <title>Active Hover States</title>
   <meta name="description" content="Custom bullet points and list icons with jQuery">
   <link rel="stylesheet" href="css/foundation.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -68,14 +68,10 @@
   <div class="row">
 		<div class="large-12 columns" id="sectionFeatures">
       <div class="content">
-        <h2>Odd/even &amp; previous/next</h2>
+        <h2>Enhanced mouseover's when you want it</h2>
         <div class="innerWrap">
-          <ul>
-            <li>Art party sartorial drinking vinegar post-ironic authentic</li>
-            <ul>
-	            <li>Twee meggings street art quinoa fashion axe, post-ironic</li>
-            </ul>
-          </ul>
+          <p>Odd/even classes</p>
+          <p>Previous/next classes</p>
         </div>
 			</div>
 		</div>
@@ -83,25 +79,24 @@
   <div class="row" id="sectionExamples">
 		<div class="large-12 columns" id="sectionExamples">
       <div class="content">
-        <h2>Examples</h2>
         <div class="large-2 columns">
           <div class="panel">
-            <h5>Title</h5>
+            <h5>Default - active/hover</h5>
           </div>
         </div>
         <div class="large-2 columns">
           <div class="panel">
-	          <h5>Title</h5>
+            <h5>Odd/even</h5>
           </div>
         </div>
          <div class="large-2 columns">
           <div class="panel">
-	          <h5>Title</h5>
+	          <h5>Previous/next</h5>
           </div>
         </div>
         <div class="large-2 columns">
           <div class="panel">
-	          <h5>Title</h5>
+	          <h5>Everything</h5>
             
           </div>
         </div>
@@ -231,9 +226,7 @@
   <script type="text/javascript">
     $(document).ready(function(e) {
       $("ul.activeHoverStates").activeHoverStates({
-        fadeIn:true, //fade in
         oddEven:false, //odd even classes
-        parentBgColourChange:true, //parent BG colour change
         prevAllClasses:true //prevAll classes on hover
       });
     });
