@@ -66,23 +66,46 @@
       <div class="content">
         <div class="large-2 columns">
           <div class="panel">
-            <h5>Default - active/hover</h5>
+            <h5>Default - active/hover and odd/even</h5>
+            <ul class="activeHoverStates" id="activeHoverStatesExample1">
+              <li><a href="#">List item 1</a></li>
+              <li><a href="#">List item 2</a></li>
+              <li><a href="#">List item 3</a></li>
+              <li><a href="#">List item 4</a></li>
+            </ul>
           </div>
         </div>
         <div class="large-2 columns">
           <div class="panel">
-            <h5>Odd/even</h5>
+            <h5>Odd/even only</h5>
+            <ul class="activeHoverStates" id="activeHoverStatesExample2">
+              <li><a href="#">List item 1</a></li>
+              <li><a href="#">List item 2</a></li>
+              <li><a href="#">List item 3</a></li>
+              <li><a href="#">List item 4</a></li>
+            </ul>
           </div>
         </div>
          <div class="large-2 columns">
           <div class="panel">
-	          <h5>Previous/next</h5>
+	          <h5>Previous/next classes only</h5>
+            <ul class="activeHoverStates" id="activeHoverStatesExample3">
+              <li><a href="#">List item 1</a></li>
+              <li><a href="#">List item 2</a></li>
+              <li><a href="#">List item 3</a></li>
+              <li><a href="#">List item 4</a></li>
+            </ul>
           </div>
         </div>
         <div class="large-2 columns">
           <div class="panel">
 	          <h5>Everything</h5>
-            
+            <ul class="activeHoverStates" id="activeHoverStatesExample4">         
+              <li><a href="#">List item 1</a></li>
+              <li><a href="#">List item 2</a></li>
+              <li><a href="#">List item 3</a></li>
+              <li><a href="#">List item 4</a></li>
+            </ul>
           </div>
         </div>
 			</div>
@@ -209,12 +232,22 @@
   </script>
   <script src="js/activeHoverStates.1.1.5.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(e) {
-      $("ul.activeHoverStates").activeHoverStates({
+    //$(document).ready(function(e) {
+      $("#activeHoverStatesExample1").activeHoverStates();
+			
+      $("#activeHoverStatesExample2").activeHoverStates({
         oddEven:false, //odd even classes
         prevAllClasses:true //prevAll classes on hover
       });
-    });
+      $("#activeHoverStatesExample3").activeHoverStates({
+        oddEven:false, //odd even classes
+        prevAllClasses:true //prevAll classes on hover
+      });
+      $("#activeHoverStatesExample4").activeHoverStates({
+        oddEven:false, //odd even classes
+        prevAllClasses:true //prevAll classes on hover
+      });
+    //});
   </script>
   
   <script type="text/javascript">
