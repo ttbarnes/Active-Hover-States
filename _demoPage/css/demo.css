@@ -131,28 +131,28 @@ div#sectionIntro .topLimExampleWrapper .columns ul li a,
 div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   color: #96aebc;
 }
-#sectionTooltips {
+#sectionFeatures {
   background: #a7ccb5;
   color: #266741;
 }
-#sectionTooltips ::-moz-selection {
+#sectionFeatures ::-moz-selection {
   background: #266741;
   color: #EEE;
   text-shadow: none;
 }
-#sectionTooltips ::selection {
+#sectionFeatures ::selection {
   background: #266741;
   color: #EEE;
   text-shadow: none;
 }
-#sectionTooltips h2,
-#sectionTooltips a {
+#sectionFeatures h2,
+#sectionFeatures a {
   color: #266741;
 }
-#sectionTooltips ul li {
+#sectionFeatures ul li {
   color: #68a581;
 }
-#sectionTooltips ul li a {
+#sectionFeatures ul li a {
   color: #68a581;
 }
 #sectionExamples {
@@ -199,29 +199,6 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 }
 #sectionExamples .large-2 .panel ul ul li {
   padding: 0;
-}
-#sectionExamples .large-2 .panel ul div.toolTip {
-  color: #EEE;
-}
-#sectionExamples .large-2 .panel ul div.toolTip a {
-  color: #EEE;
-  text-decoration: underline;
-}
-#sectionExamples .large-2 .panel ul div.toolTip a:hover {
-  text-decoration: none;
-}
-#sectionExamples .large-2 .panel ul.moreInfo div.toolTip {
-  min-width: 100px;
-}
-#sectionExamples .large-2 .panel ul.warning div.toolTip {
-  min-width: 165px;
-}
-#sectionExamples .large-2 .panel ul.textReplace span.icon {
-  display: inline-block;
-  min-width: 44px;
-}
-#sectionExamples .large-2 .panel ul.toolTipMe div.toolTip {
-  min-width: 80px;
 }
 #sectionDownload {
   background: #cac5a8;
@@ -414,9 +391,6 @@ responsive
   div#sectionIntro .topLimExampleWrapper .column,
   div#sectionIntro .topLimExampleWrapper .columns {
     padding-top: 2.5em;
-  }
-  #sectionTooltips div.toolTip {
-    font-size: 0.6em;
   }
   #sectionExamples .large-2 .panel {
     font-size: 0.750em;
