@@ -203,6 +203,27 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 #sectionExamples .large-2 .panel ul ul li {
   padding: 0;
 }
+#sectionExamples .large-2 .panel #activeHoverStatesExample2 li a {
+  border-bottom: solid 1px #E4E4E4;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample2 li.odd a {
+  background: #EEE;
+  color: #333;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample2 li.even a {
+  background: #E8E8E8;
+  color: #9A9A9A;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample2 li.hovered a {
+  background: #E8E8E8;
+  color: #333;
+  border-color: #CCC;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample2 li.active a {
+  background: #EEE;
+  color: #333;
+  opacity: 0.20;
+}
 #sectionDownload {
   background: #cac5a8;
   color: #675826;

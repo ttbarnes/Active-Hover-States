@@ -56,7 +56,7 @@
         <h2>Enhanced mouseover's, <br/>whenever you want it</h2>
         <div class="innerWrap">
           <p>Odd/even classes</p>
-          <p>Previous/next classes</p>
+          <p>PrevAll/next classes</p>
         </div>
 			</div>
 		</div>
@@ -66,7 +66,7 @@
       <div class="content">
         <div class="large-2 columns">
           <div class="panel">
-            <h5>Default - active/hover and odd/even</h5>
+            <h5>Default - active/hover, odd/even, prevAll</h5>
             <ul class="activeHoverStates" id="activeHoverStatesExample1">
               <li><a href="#">List item 1</a></li>
               <li><a href="#">List item 2</a></li>
@@ -241,8 +241,8 @@
       $("#activeHoverStatesExample1").activeHoverStates();
 				
       $("#activeHoverStatesExample2").activeHoverStates({
-        oddEven:false, //odd even classes
-        prevAllClasses:true //prevAll classes on hover
+        oddEven:true, //odd even classes
+        prevAllClasses:false //prevAll classes on hover
       });
       $("#activeHoverStatesExample3").activeHoverStates({
         oddEven:false, //odd even classes
