@@ -146,9 +146,11 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   color: #EEE;
   text-shadow: none;
 }
-#sectionFeatures h2,
-#sectionFeatures a {
+#sectionFeatures h2 {
   color: #266741;
+}
+#sectionFeatures h2 br {
+  display: block;
 }
 #sectionFeatures ul li {
   color: #68a581;
@@ -391,6 +393,9 @@ responsive
   div#sectionIntro .topLimExampleWrapper .column,
   div#sectionIntro .topLimExampleWrapper .columns {
     padding-top: 2.5em;
+  }
+  #sectionFeatures h2 br {
+    display: none;
   }
   #sectionExamples .large-2 .panel {
     font-size: 0.750em;
