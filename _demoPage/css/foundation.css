@@ -812,7 +812,7 @@ button, .button {
       margin: 0; }
       .top-bar .name h1 a {
         font-weight: normal;
-				text-align:left;
+				text-align:center;
         color: #C9C9C9;
         width: 357px;
         display: block;
@@ -988,8 +988,6 @@ button, .button {
       clear: both; }
     .top-bar .toggle-topbar {
       display: none; }
-    .top-bar .title-area {
-      float: left; }
     .top-bar .name h1 a {
       width: auto; }
     .top-bar input,

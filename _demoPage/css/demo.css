@@ -53,6 +53,7 @@ ol ol {
 }
 .top-bar .name h1 a {
   width: 310px;
+  margin: 0 auto;
   padding: 0 30px 0 15px;
 }
 /************************************
@@ -366,7 +367,6 @@ responsive
     font-size: 1.6em;
   }
   .top-bar .name h1 a {
-    width: 350px;
     padding: 0 30px;
   }
   .top-bar-section ul li.download {
