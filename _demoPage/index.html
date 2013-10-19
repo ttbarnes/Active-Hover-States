@@ -55,8 +55,9 @@
       <div class="content">
         <h2>Enhanced mouseover's, <br/>whenever you want it</h2>
         <div class="innerWrap">
-          <p>Odd/even classes</p>
-          <p>PrevAll/next classes</p>
+          <p>Control sibiling elements</p>
+          <p>Optional odd and even classes</p>
+          <p>prevAll/next classes (optional)</p>
         </div>
 			</div>
 		</div>
@@ -64,48 +65,52 @@
   <div class="row" id="sectionExamples">
 		<div class="large-12 columns" id="sectionExamples">
       <div class="content">
-        <div class="large-2 columns">
-          <div class="panel">
-            <h5>Default - active/hover, odd/even, prevAll</h5>
-            <ul class="activeHoverStates" id="activeHoverStatesExample1">
-              <li><a href="#">List item 1</a></li>
-              <li><a href="#">List item 2</a></li>
-              <li><a href="#">List item 3</a></li>
-              <li><a href="#">List item 4</a></li>
-            </ul>
+        <div class="row">
+          <div class="large-2 columns">
+            <div class="panel">
+              <h5>Default - active/hover, odd/even, prevAll</h5>
+              <ul class="activeHoverStates" id="activeHoverStatesExample1">
+                <li><a href="#">List item 1</a></li>
+                <li><a href="#">List item 2</a></li>
+                <li><a href="#">List item 3</a></li>
+                <li><a href="#">List item 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="large-2 columns">
+            <div class="panel">
+              <h5>active/hover with odd/even</h5>
+              <ul class="activeHoverStates" id="activeHoverStatesExample2">
+                <li><a href="#">List item 1</a></li>
+                <li><a href="#">List item 2</a></li>
+                <li><a href="#">List item 3</a></li>
+                <li><a href="#">List item 4</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="large-2 columns">
-          <div class="panel">
-            <h5>Odd/even only</h5>
-            <ul class="activeHoverStates" id="activeHoverStatesExample2">
-              <li><a href="#">List item 1</a></li>
-              <li><a href="#">List item 2</a></li>
-              <li><a href="#">List item 3</a></li>
-              <li><a href="#">List item 4</a></li>
-            </ul>
+        <div class="row">
+           <div class="large-2 columns">
+            <div class="panel">
+              <h5>active/hover with previous/next classes</h5>
+              <ul class="activeHoverStates" id="activeHoverStatesExample3">
+                <li><a href="#">List item 1</a></li>
+                <li><a href="#">List item 2</a></li>
+                <li><a href="#">List item 3</a></li>
+                <li><a href="#">List item 4</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-         <div class="large-2 columns">
-          <div class="panel">
-	          <h5>Previous/next classes only</h5>
-            <ul class="activeHoverStates" id="activeHoverStatesExample3">
-              <li><a href="#">List item 1</a></li>
-              <li><a href="#">List item 2</a></li>
-              <li><a href="#">List item 3</a></li>
-              <li><a href="#">List item 4</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="large-2 columns">
-          <div class="panel">
-	          <h5>Everything</h5>
-            <ul class="activeHoverStates" id="activeHoverStatesExample4">         
-              <li><a href="#">List item 1</a></li>
-              <li><a href="#">List item 2</a></li>
-              <li><a href="#">List item 3</a></li>
-              <li><a href="#">List item 4</a></li>
-            </ul>
+          <div class="large-2 columns">
+            <div class="panel">
+              <h5>Everything</h5>
+              <ul class="activeHoverStates" id="activeHoverStatesExample4">         
+                <li><a href="#">List item 1</a></li>
+                <li><a href="#">List item 2</a></li>
+                <li><a href="#">List item 3</a></li>
+                <li><a href="#">List item 4</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 			</div>
@@ -249,8 +254,7 @@
         prevAllClasses:true //prevAll classes on hover
       });
       $("#activeHoverStatesExample4").activeHoverStates({
-        oddEven:false, //odd even classes
-        prevAllClasses:true //prevAll classes on hover
+        oddEven:true, //odd even classes
       });
     //});
   </script>

@@ -188,14 +188,14 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 }
 #sectionExamples .large-2 .panel h5 {
   color: #AAA;
-  text-align: left;
+  text-align: center;
   font-size: 1.1em;
   padding: 0 0.5em;
   text-decoration: underline;
 }
 #sectionExamples .large-2 .panel ul {
   margin: 0;
-  padding: 0 0.5em;
+  padding: 0 0.5em 0.5em 0.5em;
 }
 #sectionExamples .large-2 .panel ul li {
   padding: 0 0.5em;
@@ -215,7 +215,7 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   color: #9A9A9A;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample2 li.hovered a {
-  background: #E8E8E8;
+  background: #FAFAFA;
   color: #333;
   border-color: #CCC;
 }
