@@ -15,8 +15,6 @@
 #activeHoverStates,
 .activeHoverStates {
   margin-bottom: 40px;
-  /*custom colours*/
-
 }
 #activeHoverStates li,
 .activeHoverStates li,
@@ -37,9 +35,9 @@
   width: 100%;
   text-align: center;
   text-decoration: none;
-  background: #000;
+  background: #222;
   color: #FFF;
-  padding: 5px 0;
+  padding: 2px 0;
   border-bottom: dashed 2px #333;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
@@ -57,7 +55,7 @@
 .activeHoverStates li.active a,
 #activeHoverStates div.active a,
 .activeHoverStates div.active a {
-  background: #1E1E1E;
+  background: #333;
   color: #444;
 }
 #activeHoverStates li.activePrev,
@@ -65,52 +63,4 @@
 #activeHoverStates div.activePrev,
 .activeHoverStates div.activePrev {
   opacity: 0.5;
-  border-color: #1E1E1E;
 }
-#activeHoverStates.activeHoverStates li a,
-.activeHoverStates.activeHoverStates li a,
-#activeHoverStates.activeHoverStates div a,
-.activeHoverStates.activeHoverStates div a {
-  background: #7c3232;
-  color: #EEE;
-  border-color: #612727;
-}
-#activeHoverStates.activeHoverStates li a:hover,
-.activeHoverStates.activeHoverStates li a:hover,
-#activeHoverStates.activeHoverStates div a:hover,
-.activeHoverStates.activeHoverStates div a:hover {
-  background: #943d3d;
-}
-#activeHoverStates.activeHoverStates2 li a,
-.activeHoverStates.activeHoverStates2 li a,
-#activeHoverStates.activeHoverStates2 div a,
-.activeHoverStates.activeHoverStates2 div a {
-  background: #6a7c32;
-  color: #EEE;
-  border-color: #4e5b24;
-}
-#activeHoverStates.activeHoverStates2 li a:hover,
-.activeHoverStates.activeHoverStates2 li a:hover,
-#activeHoverStates.activeHoverStates2 div a:hover,
-.activeHoverStates.activeHoverStates2 div a:hover {
-  background: #7f943b;
-}
-/*
-@media(max-width:1000px){
-	.activeHoverStatesWrapper .content {
-		width:100%;
-		margin:0;
-		ul,ol,div {
-			li,
-			div {
-				padding:2px 0;					
-				a {
-					padding:0.5em 0;
-					border:0 none;
-				}
-				
-			}
-		}
-  }
-}
-*/
