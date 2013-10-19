@@ -156,25 +156,21 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   color: #68a581;
 }
 #sectionExamples {
-  background: #cac5a8;
-  color: #675826;
-}
-#sectionExamples .large-2 {
-  font-size: 1em;
+  background: #d3d3d3;
+  color: #222222;
 }
 #sectionExamples ::-moz-selection {
-  background: #675826;
-  color: #E6E6E6;
+  background: #222222;
+  color: #d3d3d3;
   text-shadow: none;
 }
 #sectionExamples ::selection {
-  background: #675826;
-  color: #E6E6E6;
+  background: #222222;
+  color: #d3d3d3;
   text-shadow: none;
 }
-#sectionExamples h2,
-#sectionExamples a {
-  color: #675826;
+#sectionExamples .large-2 {
+  font-size: 1em;
 }
 #sectionExamples .large-2 {
   padding-top: 1em;
@@ -228,17 +224,17 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   min-width: 80px;
 }
 #sectionDownload {
-  background: #d3d3d3;
-  color: #222222;
+  background: #cac5a8;
+  color: #675826;
 }
 #sectionDownload ::-moz-selection {
-  background: #222222;
-  color: #d3d3d3;
+  background: #675826;
+  color: #E6E6E6;
   text-shadow: none;
 }
 #sectionDownload ::selection {
-  background: #222222;
-  color: #d3d3d3;
+  background: #675826;
+  color: #E6E6E6;
   text-shadow: none;
 }
 #sectionDownload .row {
@@ -253,15 +249,26 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 #sectionDownload h2,
 #sectionDownload a {
   margin-bottom: 0.2em;
+  color: #675826;
+}
+#sectionDownload a.button {
+  color: #B8B8B8;
+}
+#sectionDownload a.button:hover,
+#sectionDownload a.button:hover,
+#sectionDownload a.button:focus,
+#sectionDownload a.button:hover,
+#sectionDownload a.button:focus {
+  color: #C1C1C1;
 }
 #sectionDownload p.small {
   display: inline-block;
-  color: #646464;
+  color: #999;
   margin-bottom: 3em;
   font-size: 0.850em;
 }
 #sectionDownload p.small a {
-  color: #989898;
+  color: #999;
   text-decoration: none;
 }
 #sectionDownload div.row p.small {
