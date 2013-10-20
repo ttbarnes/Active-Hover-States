@@ -260,6 +260,31 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 #sectionExamples .large-2 .panel #activeHoverStatesExample3 li.prevAll a {
   opacity: 0.70;
 }
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li a {
+  color: #E8E8E8;
+  border: 0 none;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.odd a {
+  background: #813636;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.odd.active a {
+  background: #813636;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.even a {
+  background: #AC774D;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.even.active a {
+  background: #AC774D;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.active a {
+  opacity: 0.50;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.prevAll a {
+  opacity: 0.50;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample4 li.hovered a {
+  text-decoration: underline;
+}
 #sectionDownload {
   background: #cac5a8;
   color: #675826;
