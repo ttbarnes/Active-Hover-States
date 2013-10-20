@@ -203,6 +203,26 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 #sectionExamples .large-2 .panel ul ul li {
   padding: 0;
 }
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li a {
+  border-bottom: solid 1px #AAA;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li.odd a {
+  background: #222222;
+  color: #9A9A9A;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li.odd a.hovered a {
+  border-color: #9A9A9A;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li.even a {
+  background: #9A9A9A;
+  color: #222222;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li.even.hovered a {
+  border-color: #9A9A9A;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample1 li.active a {
+  opacity: 0.20;
+}
 #sectionExamples .large-2 .panel #activeHoverStatesExample2 li a {
   border-bottom: solid 1px #E4E4E4;
 }
@@ -223,6 +243,22 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   background: #EEE;
   color: #333;
   opacity: 0.20;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample3 li a {
+  background: #366681;
+  color: #CCC;
+  border: 0 none;
+  border-bottom: dashed 2px #2B546A;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample3 li a.hovered a {
+  background: #477F9F;
+  color: #C9C9C9;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample3 li.active a {
+  color: #999;
+}
+#sectionExamples .large-2 .panel #activeHoverStatesExample3 li.prevAll a {
+  opacity: 0.70;
 }
 #sectionDownload {
   background: #cac5a8;
