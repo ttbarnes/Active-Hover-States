@@ -6,7 +6,7 @@
     <title>Active Hover States - Skeleton</title>
     <link rel="stylesheet" href="css/demo.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/activeHoverStates.styles.css">
+    <link rel="stylesheet" href="css/activeHoverStates.styles.min.css">
   </head>
   <body>
 	  <div class="row" id="sectionExamples">
@@ -17,14 +17,12 @@
             <div class="panel">
             
               <!-- list example START -->
-              <ul class="activeHoverStates" id="exampleWrapper">            
-                <li>Test list item</li>
-                <ul id="featured">
-                  <li>Dummy list item</li>
-                </ul>
-                <li>Testing list item</li>
-                  <li>Item</li>
-                  <li>List of test</li>
+              <ul class="activeHoverStates" id="activeHoverStateExample">            
+                <li><a href="#">Test list item</a></li>
+                <li><a href="#">Dummy list item</a></li>
+                <li><a href="#">Testing list item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">List of test</a></li>
               </ul>
               <!-- list item example END -->
               
@@ -39,9 +37,9 @@
       <p class="last">&#8249;/div&#8250;</p>
     </div>    
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/activeHoverStates.1.1.5.js"></script>
+    <script src="js/activeHoverStates.1.1.5.min.js"></script>
     <script type="text/javascript">
-			$("#exampleWrapper").activeHoverStates({
+			$("#activeHoverStateExample").activeHoverStates({
 				oddEven:false,
 				prevAllClasses:true
 			});

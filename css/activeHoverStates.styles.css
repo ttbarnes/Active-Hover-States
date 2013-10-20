@@ -1,5 +1,5 @@
 /********************************
-* Active Hover States 1.1.4
+* Active Hover States 1.1.5
 	* Control and highlight parent or next/prev items
 	* http://github.com/ttbarnes/Active-Hover-States
 	*
@@ -7,33 +7,15 @@
 	* http://tonybarnes.me
 	* No license or copyright - do what you like
 	*
-	* Last updated: 01/10/2013
+	* Last updated: 20/10/2013
   ********************************
   plugin styles
 **********************************/
 /*active hover states*/
-.activeHoverStatesWrapper {
-  background: #222;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-.activeHoverStatesWrapper .content {
-  position: relative;
-  margin: 0 auto;
-  width: 1000px;
-}
-.activeHoverStatesWrapper #activeHoverStates,
-.activeHoverStatesWrapper .activeHoverStates {
-  margin-bottom: 40px;
-  /*custom colours*/
-
-}
-.activeHoverStatesWrapper #activeHoverStates li,
-.activeHoverStatesWrapper .activeHoverStates li,
-.activeHoverStatesWrapper #activeHoverStates div,
-.activeHoverStatesWrapper .activeHoverStates div {
+#activeHoverStates li,
+.activeHoverStates li,
+#activeHoverStates div,
+.activeHoverStates div {
   /*hover state*/
 
   /*active state*/
@@ -41,96 +23,40 @@
   /*active state - nextAll items*/
 
 }
-.activeHoverStatesWrapper #activeHoverStates li a,
-.activeHoverStatesWrapper .activeHoverStates li a,
-.activeHoverStatesWrapper #activeHoverStates div a,
-.activeHoverStatesWrapper .activeHoverStates div a {
+#activeHoverStates li a,
+.activeHoverStates li a,
+#activeHoverStates div a,
+.activeHoverStates div a {
   display: inline-block;
   width: 100%;
   text-align: center;
   text-decoration: none;
-  background: #000;
+  background: #222;
   color: #FFF;
-  padding: 5px 0;
+  padding: 2px 0;
   border-bottom: dashed 2px #333;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-.activeHoverStatesWrapper #activeHoverStates li.hovered a,
-.activeHoverStatesWrapper .activeHoverStates li.hovered a,
-.activeHoverStatesWrapper #activeHoverStates div.hovered a,
-.activeHoverStatesWrapper .activeHoverStates div.hovered a {
+#activeHoverStates li.hovered a,
+.activeHoverStates li.hovered a,
+#activeHoverStates div.hovered a,
+.activeHoverStates div.hovered a {
   background: #131313;
   color: #FFF;
 }
-.activeHoverStatesWrapper #activeHoverStates li.active a,
-.activeHoverStatesWrapper .activeHoverStates li.active a,
-.activeHoverStatesWrapper #activeHoverStates div.active a,
-.activeHoverStatesWrapper .activeHoverStates div.active a {
-  background: #1E1E1E;
+#activeHoverStates li.active a,
+.activeHoverStates li.active a,
+#activeHoverStates div.active a,
+.activeHoverStates div.active a {
+  background: #333;
   color: #444;
 }
-.activeHoverStatesWrapper #activeHoverStates li.activePrev,
-.activeHoverStatesWrapper .activeHoverStates li.activePrev,
-.activeHoverStatesWrapper #activeHoverStates div.activePrev,
-.activeHoverStatesWrapper .activeHoverStates div.activePrev {
+#activeHoverStates li.activePrev,
+.activeHoverStates li.activePrev,
+#activeHoverStates div.activePrev,
+.activeHoverStates div.activePrev {
   opacity: 0.5;
-  border-color: #1E1E1E;
-}
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates1 li a,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates1 li a,
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates1 div a,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates1 div a {
-  background: #7c3232;
-  color: #EEE;
-  border-color: #612727;
-}
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates1 li a:hover,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates1 li a:hover,
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates1 div a:hover,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates1 div a:hover {
-  background: #943d3d;
-}
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates2 li a,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates2 li a,
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates2 div a,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates2 div a {
-  background: #6a7c32;
-  color: #EEE;
-  border-color: #4e5b24;
-}
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates2 li a:hover,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates2 li a:hover,
-.activeHoverStatesWrapper #activeHoverStates.activeHoverStates2 div a:hover,
-.activeHoverStatesWrapper .activeHoverStates.activeHoverStates2 div a:hover {
-  background: #7f943b;
-}
-/*parent background colour change*/
-.activeHovering {
-  background: #161616;
-}
-@media (max-width: 1000px) {
-  .activeHoverStatesWrapper .content {
-    width: 100%;
-    margin: 0;
-  }
-  .activeHoverStatesWrapper .content ul li,
-  .activeHoverStatesWrapper .content ol li,
-  .activeHoverStatesWrapper .content div li,
-  .activeHoverStatesWrapper .content ul div,
-  .activeHoverStatesWrapper .content ol div,
-  .activeHoverStatesWrapper .content div div {
-    padding: 2px 0;
-  }
-  .activeHoverStatesWrapper .content ul li a,
-  .activeHoverStatesWrapper .content ol li a,
-  .activeHoverStatesWrapper .content div li a,
-  .activeHoverStatesWrapper .content ul div a,
-  .activeHoverStatesWrapper .content ol div a,
-  .activeHoverStatesWrapper .content div div a {
-    padding: 0.5em 0;
-    border: 0 none;
-  }
 }
