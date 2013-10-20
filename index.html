@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0">
+    <title>List Icon Manipulator - Skeleton</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/lim.styles.min.css">
+  </head>
+  <body>
+	  <div class="row" id="sectionExamples">
+      <div class="large-12 columns" id="limExamples">
+        <div class="content">
+          <h2>List Icon Manipulator - Skeleton</h2>
+          <div class="large-2 columns">
+            <div class="panel">
+            
+              <!-- list item examples START -->
+              <ul id="exampleWrapper">            
+                <li>Dummy list item</li>
+                <ul id="featured">
+                  <li>Featured list item</li>
+                </ul>
+                <li>List item test</li>
+                <ul id="notification">
+                  <li>Test list item</li>
+                  <li>Eat my bullet point</li>
+                </ul>
+                <ul id="warning">
+                  <li>Tooltip me - hella Terry Richardson</li>
+                </ul>
+              </ul>
+              <!-- list item examples END -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Author: <a href="http://tonybarnes.me" title="tonybarnes.me">Tony Barnes</a></p>
+      <p class="small"><a href="http://github.com/ttbarnes/List-Icon-Manipulator">github.com/ttbarnes/List-Icon-Manipulator</a></p>
+      <p class="last">&#8249;/div&#8250;</p>
+    </div>    
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/listIconManipulator.1.1.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+			$('#exampleWrapper').listIconManipulator({
+				content: {
+					iconContent:'!>',
+					iconColor:'#EEE'
+				}
+			});
+			$('#featured').listIconManipulator({
+				content: {
+					iconContent:'*',
+					iconColor:'red'
+				}
+			});
+			$('#notification').listIconManipulator({
+				content: {
+					iconContent:'!!!',
+					iconColor:'#333'
+				}
+			});
+			$('#warning').listIconManipulator({
+				content: {
+					iconContent: '!>',
+					iconColor:'#EEE',
+					tooltip:true,
+					tooltipContent:'Boo!'
+				}
+			});
+		});
+		</script>
+  </body>
+  </html>
