@@ -80,57 +80,44 @@ div.innerWrap .listIconManipulator {
 /************************************
 section specific
 *************************************/
-div#sectionIntro,
-div#sectionAuthor {
-  background: #b6d5e6;
+div#sectionIntro {
+  background: #CEA986;
   color: #366681;
 }
-div#sectionIntro ::-moz-selection,
-div#sectionAuthor ::-moz-selection {
+div#sectionIntro ::-moz-selection {
   background: #366681;
   color: #EAEAEA;
   text-shadow: none;
 }
-div#sectionIntro ::selection,
-div#sectionAuthor ::selection {
+div#sectionIntro ::selection {
   background: #366681;
   color: #EAEAEA;
   text-shadow: none;
 }
 div#sectionIntro h2,
-div#sectionAuthor h2,
-div#sectionIntro a,
-div#sectionAuthor a {
+div#sectionIntro a {
   color: #366681;
 }
-div#sectionIntro p.headingSub,
-div#sectionAuthor p.headingSub {
+div#sectionIntro p.headingSub {
   color: #96aebc;
 }
-div#sectionIntro .topLimExampleWrapper,
-div#sectionAuthor .topLimExampleWrapper {
+div#sectionIntro .topLimExampleWrapper {
   margin: 0 auto;
 }
 div#sectionIntro .topLimExampleWrapper .column,
-div#sectionAuthor .topLimExampleWrapper .column,
-div#sectionIntro .topLimExampleWrapper .columns,
-div#sectionAuthor .topLimExampleWrapper .columns {
+div#sectionIntro .topLimExampleWrapper .columns {
   padding-top: 1em;
   padding-bottom: 1em;
   margin: 0 auto;
   float: none;
 }
-div#sectionIntro .topLimExampleWrapper .column ul li,
-div#sectionAuthor .topLimExampleWrapper .column ul li,
-div#sectionIntro .topLimExampleWrapper .columns ul li,
-div#sectionAuthor .topLimExampleWrapper .columns ul li {
-  color: #96aebc;
-}
 div#sectionIntro .topLimExampleWrapper .column ul li a,
-div#sectionAuthor .topLimExampleWrapper .column ul li a,
-div#sectionIntro .topLimExampleWrapper .columns ul li a,
-div#sectionAuthor .topLimExampleWrapper .columns ul li a {
-  color: #96aebc;
+div#sectionIntro .topLimExampleWrapper .columns ul li a {
+  color: #917356;
+}
+div#sectionIntro .topLimExampleWrapper .column ul li.activePrev,
+div#sectionIntro .topLimExampleWrapper .columns ul li.activePrev {
+  opacity: 0.20;
 }
 #sectionFeatures {
   background: #a7ccb5;
@@ -420,6 +407,24 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 }
 #sectionOptions h2 {
   color: #556033;
+  margin-bottom: 0.8em;
+}
+#sectionAuthor {
+  background: #b6d5e6;
+  color: #96aebc;
+}
+#sectionAuthor ::-moz-selection {
+  background: #556033;
+  color: #b8c19d;
+  text-shadow: none;
+}
+#sectionAuthor ::selection {
+  background: #366681;
+  color: #EEE;
+  text-shadow: none;
+}
+#sectionAuthor h2 {
+  color: #366681;
   margin-bottom: 0.8em;
 }
 #sectionAuthor .content h6 {
