@@ -187,7 +187,7 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   margin: 0 auto;
 }
 #sectionExamples .large-2 .panel h5 {
-  color: #AAA;
+  color: #222222;
   text-align: center;
   font-size: 1.1em;
   padding: 0 0.5em;
@@ -204,14 +204,14 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
   padding: 0;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample1 li a {
-  border-bottom: solid 1px #AAA;
+  border-bottom: solid 1px #666;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample1 li.odd a {
-  background: #222222;
-  color: #9A9A9A;
+  background: #686868;
+  color: #444;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample1 li.odd a.hovered a {
-  border-color: #9A9A9A;
+  border-color: #333;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample1 li.even a {
   background: #9A9A9A;
@@ -263,6 +263,7 @@ div#sectionAuthor .topLimExampleWrapper .columns ul li a {
 #sectionExamples .large-2 .panel #activeHoverStatesExample4 li a {
   color: #E8E8E8;
   border: 0 none;
+  padding: 2px 0 3px 0;
 }
 #sectionExamples .large-2 .panel #activeHoverStatesExample4 li.odd a {
   background: #813636;
