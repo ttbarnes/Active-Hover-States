@@ -18,9 +18,7 @@
 		init : function(options) {
 
 			var defaultSettings = $.extend({ //default settings
-				selectors: {
-					target: 'div.activeHoverStates'
-				},
+				target: '.activeHoverStates',
 				oddEven: true, //oddEven, first and last classes
 				prevAllClasses: true //prevAll classes on hover
 			}, options);
