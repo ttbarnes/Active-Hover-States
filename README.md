@@ -1,5 +1,5 @@
 # Active Hover States
-Enhanced mouseover's for lists
+jQuery plugin for enhanced list item mouseover's
 
 Demo: http://tonybarnes.me/showcase/code-snippets/activeHoverStates/
 
