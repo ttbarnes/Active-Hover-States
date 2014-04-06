@@ -1,7 +1,7 @@
 # Active Hover States
 jQuery plugin for enhanced list item mouseover's. Add's active/inactive classes to elements.
 
-Demo: http://tonybarnes.me/showcase/code-snippets/activeHoverStates/
+Demo: http://tonybarnes.me/#/showcase/jquery/active-hover-states
 
 
 ## Note
